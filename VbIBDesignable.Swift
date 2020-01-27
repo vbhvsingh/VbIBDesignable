@@ -101,3 +101,41 @@ extension UIView {
    
     
 }
+
+
+@IBDesignable
+final class GradientView: UIView {
+    @IBInspectable var startColor: UIColor = UIColor.clear
+    @IBInspectable var endColor: UIColor = UIColor.clear
+    
+    override func draw(_ rect: CGRect) {
+        let gradient = CAGradientLayer()
+        gradient.colors = [self.startColor.cgColor, self.endColor.cgColor]
+        gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
+        gradient.frame = self.bounds
+        self.layer.insertSublayer(gradient, at: 0)
+    }
+}
+    @IBDesignable
+    final class GradientButtonView: UIButton {
+        @IBInspectable var startColor: UIColor = UIColor.clear
+        @IBInspectable var endColor: UIColor = UIColor.clear
+        let gradient = CAGradientLayer()
+        override func draw(_ rect: CGRect) {
+            
+            // gradient colors in order which they will visually appear
+            gradient.colors = [self.startColor.cgColor, self.endColor.cgColor]
+            
+            // Gradient from left to right
+            gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
+            gradient.endPoint = CGPoint(x: 1.0, y: 0.0)
+            
+            // set the gradient layer to the same size as the view
+            gradient.frame = rect
+            // add the gradient layer to the views layer for rendering
+            self.layer.insertSublayer(gradient, at: 0)
+            //self.layer.addSublayer(gradient)
+        }
+        
+}
