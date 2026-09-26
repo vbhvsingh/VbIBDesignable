@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-label="Attributes Inspector showing VbIBDesignable properties next to the rendered view">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5E5CE6"/><stop offset="1" stop-color="#FF375F"/></linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity=".25"/></filter>
+    <style>
+      .p{font:12px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#d1d5db}
+      .k{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#f3f4f6}
+      .t{font:600 11px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#9ca3af;letter-spacing:.5px}
+      .v{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#f3f4f6}
+      .field{fill:#1c2130;stroke:#2c3448}
+    </style>
+  </defs>
+  <rect width="760" height="330" rx="16" fill="#0f1320"/>
+  <!-- inspector panel -->
+  <rect x="16" y="16" width="300" height="298" rx="10" fill="#161b2b" stroke="#232a3d"/>
+  <text x="32" y="42" class="t">ATTRIBUTES INSPECTOR</text>
+  <text x="32" y="66" class="k">Gradient View</text>
+  <g class="p">
+    <text x="32" y="98">Start Color</text><rect class="field" x="170" y="86" width="130" height="18" rx="4"/><rect x="176" y="90" width="10" height="10" rx="2" fill="#5E5CE6"/><text class="v" x="192" y="99">systemIndigo</text>
+    <text x="32" y="124">End Color</text><rect class="field" x="170" y="112" width="130" height="18" rx="4"/><rect x="176" y="116" width="10" height="10" rx="2" fill="#FF375F"/><text class="v" x="192" y="125">systemPink</text>
+    <text x="32" y="150">Start Point</text><rect class="field" x="170" y="138" width="130" height="18" rx="4"/><text class="v" x="176" y="151">0, 0.5</text>
+    <text x="32" y="176">End Point</text><rect class="field" x="170" y="164" width="130" height="18" rx="4"/><text class="v" x="176" y="177">1, 0.5</text>
+  </g>
+  <text x="32" y="210" class="k">View</text>
+  <g class="p">
+    <text x="32" y="238">Corner Radius</text><rect class="field" x="170" y="226" width="130" height="18" rx="4"/><text class="v" x="176" y="239">24</text>
+    <text x="32" y="264">Shadow Opacity</text><rect class="field" x="170" y="252" width="130" height="18" rx="4"/><text class="v" x="176" y="265">0.35</text>
+    <text x="32" y="290">Shadow Offset</text><rect class="field" x="170" y="278" width="130" height="18" rx="4"/><text class="v" x="176" y="291">0, 8</text>
+  </g>
+  <!-- canvas -->
+  <rect x="332" y="16" width="412" height="298" rx="10" fill="#f2f2f7"/>
+  <text x="348" y="42" class="t" fill="#6b7280">STORYBOARD CANVAS, LIVE</text>
+  <g filter="url(#sh)"><rect x="392" y="92" width="292" height="150" rx="24" fill="url(#g)"/></g>
+  <text x="538" y="158" text-anchor="middle" font-family="-apple-system,Helvetica,Arial,sans-serif" font-weight="700" font-size="20" fill="#fff">GradientView</text>
+  <text x="538" y="184" text-anchor="middle" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="13" fill="#fff" opacity=".85">rendered by Interface Builder, no run needed</text>
+</svg>
